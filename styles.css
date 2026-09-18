@@ -1,0 +1,430 @@
+:root {
+  --black: #111;
+  --muted: #707072;
+  --bg: #fff;
+  --line: #e5e5e5;
+  --sale: #d33918;
+  --soft: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: var(--black);
+  background: var(--bg);
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.promo-bar {
+  background: var(--soft);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 16px;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 36px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+  border-bottom: 1px solid var(--line);
+}
+
+section[id] {
+  scroll-margin-top: 84px;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #111;
+  padding-bottom: 2px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input {
+  border: 0;
+  background: var(--soft);
+  border-radius: 24px;
+  padding: 10px 16px;
+  width: 160px;
+  font: inherit;
+  font-size: 14px;
+}
+
+.icon-btn {
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+.icon-btn:hover {
+  background: var(--soft);
+}
+
+.hero {
+  position: relative;
+  min-height: 78vh;
+  overflow: hidden;
+  background: #111;
+}
+
+.hero img {
+  width: 100%;
+  height: 78vh;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.hero-copy {
+  position: absolute;
+  left: 48px;
+  bottom: 56px;
+  color: #fff;
+  max-width: 640px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: clamp(56px, 10vw, 112px);
+  line-height: 0.85;
+  letter-spacing: -0.06em;
+  font-weight: 900;
+}
+
+.tagline {
+  margin: 16px 0 28px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hero-cta,
+.feature-copy {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 12px 22px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.btn-light {
+  background: #fff;
+  color: #111;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+
+.cat {
+  position: relative;
+  overflow: hidden;
+  min-height: 380px;
+}
+
+.cat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 380px;
+  transition: transform 0.5s ease;
+}
+
+.cat:hover img {
+  transform: scale(1.04);
+}
+
+.cat span {
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.products,
+.feature {
+  padding: 56px 36px;
+}
+
+.section-head {
+  margin-bottom: 28px;
+}
+
+.section-head h2,
+.feature h2 {
+  font-size: 32px;
+  letter-spacing: -0.03em;
+}
+
+.section-head p {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card-media {
+  position: relative;
+  background: var(--soft);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+}
+
+.sale-badge {
+  color: var(--sale);
+}
+
+.card h3 {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 2px 0 6px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.price s {
+  color: var(--muted);
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.add {
+  margin-top: 10px;
+  width: 100%;
+  border: 0;
+  background: #111;
+  color: #fff;
+  border-radius: 24px;
+  padding: 10px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add:hover,
+.add.added {
+  background: #3d3d3d;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+  align-items: center;
+  background: var(--soft);
+}
+
+.feature img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.price-lg {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 8px 0 18px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 24px;
+  background: #111;
+  color: #fff;
+  padding: 56px 36px 40px;
+}
+
+.footer h4 {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer a,
+.footer p {
+  display: block;
+  color: #b8b8b8;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.legal {
+  background: #111;
+  color: #707072;
+  font-size: 12px;
+  padding: 0 36px 28px;
+}
+
+@media (max-width: 980px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .hero-copy {
+    left: 20px;
+    right: 20px;
+    bottom: 28px;
+  }
+
+  .categories,
+  .grid,
+  .feature,
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .products,
+  .feature {
+    padding: 32px 16px;
+  }
+
+  .feature img,
+  .cat,
+  .cat img {
+    min-height: 240px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 640px) {
+  .search {
+    display: none;
+  }
+
+  .categories,
+  .grid,
+  .feature,
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .hero img {
+    height: 70vh;
+  }
+}

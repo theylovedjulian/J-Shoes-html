@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J shoes | Just Step In</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="promo-bar">Free shipping on orders over ₱3,000 · 30-day returns</div>
+
+  <header class="nav">
+    <a class="logo" href="index.html" aria-label="J shoes home">J shoes</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#new">New</a>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#kids">Kids</a>
+      <a href="#sale">Sale</a>
+    </nav>
+    <div class="nav-actions">
+      <form class="search" role="search">
+        <input type="search" placeholder="Search" aria-label="Search shoes" />
+      </form>
+      <button class="icon-btn" type="button" aria-label="Favorites">♡</button>
+      <button class="icon-btn bag" type="button" aria-label="Bag">Bag <span id="bag-count">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img
+        src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=1800&q=80"
+        alt="White lifestyle sneakers on a wooden floor"
+      />
+      <div class="hero-copy">
+        <p class="eyebrow">Fall 2026 Drop</p>
+        <h1>J shoes</h1>
+        <p class="tagline">Built for speed. Styled for the street.</p>
+        <div class="hero-cta">
+          <a class="btn btn-light" href="#shop">Shop Now</a>
+          <a class="btn btn-ghost" href="#new">New Arrivals</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="shop">
+      <a class="cat" href="#men">
+        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=900&q=80" alt="Men's running sneakers" />
+        <span>Men</span>
+      </a>
+      <a class="cat" href="#women">
+        <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd17c?auto=format&fit=crop&w=900&q=80" alt="Women's lifestyle sneakers" />
+        <span>Women</span>
+      </a>
+      <a class="cat" href="#kids">
+        <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=900&q=80" alt="Colorful kids sneakers" />
+        <span>Kids</span>
+      </a>
+    </section>
+
+    <section class="products" id="new">
+      <div class="section-head">
+        <h2>New Arrivals</h2>
+        <p>Fresh silhouettes. Real prices. No waitlist.</p>
+      </div>
+      <div class="grid">
+        <article class="card" data-price="7495">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80" alt="J Pulse Runner in cream and gum" />
+            <span class="badge">Just In</span>
+          </div>
+          <h3>J Pulse Runner</h3>
+          <p class="meta">Men's Road Running</p>
+          <p class="price">₱7,495</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="8995">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" alt="J Air Court high-top sneakers" />
+            <span class="badge">Just In</span>
+          </div>
+          <h3>J Air Court</h3>
+          <p class="meta">Lifestyle Shoes</p>
+          <p class="price">₱8,995</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="6995">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="J Flux Knit in pastel tones" />
+          </div>
+          <h3>J Flux Knit</h3>
+          <p class="meta">Women's Training</p>
+          <p class="price">₱6,995</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="5495">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80" alt="J Velocity in neon green" />
+          </div>
+          <h3>J Velocity</h3>
+          <p class="meta">Men's Training</p>
+          <p class="price">₱5,495</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature-copy">
+        <p class="eyebrow">Member Exclusive</p>
+        <h2>J Max 90</h2>
+        <p>Cushioned heel, visible air-style unit, and a street-ready upper. The everyday icon, reworked for J shoes.</p>
+        <p class="price-lg">₱10,995</p>
+        <a class="btn btn-dark" href="#men">Shop J Max 90</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80" alt="White high-top sneakers on a dark floor" />
+    </section>
+
+    <section class="products" id="men">
+      <div class="section-head">
+        <h2>Men</h2>
+        <p>Performance and lifestyle, priced to move.</p>
+      </div>
+      <div class="grid">
+        <article class="card" data-price="9295">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=800&q=80" alt="J Zoom Elite black sneakers" />
+          </div>
+          <h3>J Zoom Elite</h3>
+          <p class="meta">Men's Basketball</p>
+          <p class="price">₱9,295</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="6795">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80" alt="J Trail Blazer colorful sneakers" />
+          </div>
+          <h3>J Trail Blazer</h3>
+          <p class="meta">Men's Hiking</p>
+          <p class="price">₱6,795</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="4995">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=800&q=80" alt="J Classic Low retro sneakers" />
+          </div>
+          <h3>J Classic Low</h3>
+          <p class="meta">Men's Skate</p>
+          <p class="price">₱4,995</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="8495">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80" alt="J React Cloud white sneakers" />
+          </div>
+          <h3>J React Cloud</h3>
+          <p class="meta">Men's Running</p>
+          <p class="price">₱8,495</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="products" id="women">
+      <div class="section-head">
+        <h2>Women</h2>
+        <p>Light, loud, and made to last.</p>
+      </div>
+      <div class="grid">
+        <article class="card" data-price="7295">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd17c?auto=format&fit=crop&w=800&q=80" alt="J Aura pink sneakers" />
+          </div>
+          <h3>J Aura</h3>
+          <p class="meta">Women's Lifestyle</p>
+          <p class="price">₱7,295</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="6195">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80" alt="J Metro white sneakers" />
+          </div>
+          <h3>J Metro</h3>
+          <p class="meta">Women's Walking</p>
+          <p class="price">₱6,195</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="8795">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?auto=format&fit=crop&w=800&q=80" alt="J Rise Platform sneakers" />
+          </div>
+          <h3>J Rise Platform</h3>
+          <p class="meta">Women's Fashion</p>
+          <p class="price">₱8,795</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="5595">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80" alt="J Sprint Lite running shoes" />
+          </div>
+          <h3>J Sprint Lite</h3>
+          <p class="meta">Women's Running</p>
+          <p class="price">₱5,595</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="products" id="kids">
+      <div class="section-head">
+        <h2>Kids</h2>
+        <p>Durable kicks that keep up on the playground.</p>
+      </div>
+      <div class="grid">
+        <article class="card" data-price="3495">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=800&q=80" alt="J Mini Court kids sneakers" />
+          </div>
+          <h3>J Mini Court</h3>
+          <p class="meta">Kids' Lifestyle</p>
+          <p class="price">₱3,495</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="2995">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1514989940723-28d6b8f0ac1a?auto=format&fit=crop&w=800&q=80" alt="J Playground colorful kids shoes" />
+          </div>
+          <h3>J Playground</h3>
+          <p class="meta">Kids' Everyday</p>
+          <p class="price">₱2,995</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="3795">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=80" alt="J Jr Zoom athletic shoes" />
+          </div>
+          <h3>J Jr Zoom</h3>
+          <p class="meta">Kids' Running</p>
+          <p class="price">₱3,795</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="3295">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80" alt="J Dunk Mini kids sneakers" />
+          </div>
+          <h3>J Dunk Mini</h3>
+          <p class="meta">Kids' Basketball</p>
+          <p class="price">₱3,295</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="products sale" id="sale">
+      <div class="section-head">
+        <h2>Sale</h2>
+        <p>Last pairs. Lower prices.</p>
+      </div>
+      <div class="grid">
+        <article class="card" data-price="3995">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80" alt="J Pulse Runner on sale" />
+            <span class="badge sale-badge">-30%</span>
+          </div>
+          <h3>J Pulse Runner '22</h3>
+          <p class="meta">Men's Road Running</p>
+          <p class="price"><s>₱5,695</s> ₱3,995</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="4495">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80" alt="J Metro previous season" />
+            <span class="badge sale-badge">-25%</span>
+          </div>
+          <h3>J Metro Pack</h3>
+          <p class="meta">Women's Walking</p>
+          <p class="price"><s>₱5,995</s> ₱4,495</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="2495">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?auto=format&fit=crop&w=800&q=80" alt="J Mini Court previous colorway" />
+            <span class="badge sale-badge">-20%</span>
+          </div>
+          <h3>J Mini Court OG</h3>
+          <p class="meta">Kids' Lifestyle</p>
+          <p class="price"><s>₱3,095</s> ₱2,495</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+        <article class="card" data-price="5295">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" alt="J Air Court last season" />
+            <span class="badge sale-badge">-40%</span>
+          </div>
+          <h3>J Air Court Retro</h3>
+          <p class="meta">Lifestyle Shoes</p>
+          <p class="price"><s>₱8,795</s> ₱5,295</p>
+          <button class="add" type="button">Add to Bag</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>J shoes</strong>
+      <p>Just Step In.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="#new">New Arrivals</a>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#kids">Kids</a>
+      <a href="#sale">Sale</a>
+    </div>
+    <div>
+      <h4>Help</h4>
+      <a href="#shop">Order Status</a>
+      <a href="#shop">Shipping</a>
+      <a href="#shop">Returns</a>
+      <a href="#shop">Contact</a>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <p>Bonifacio High Street<br />Taguig, Metro Manila</p>
+      <p>Daily 10:00 AM – 9:00 PM</p>
+    </div>
+  </footer>
+
+  <p class="legal">© 2026 J shoes. All rights reserved. Inspired by modern athletic retail — original brand, original products.</p>
+
+  <script>
+    const bagCount = document.getElementById("bag-count");
+    let items = 0;
+    document.querySelectorAll(".add").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        items += 1;
+        bagCount.textContent = items;
+        btn.textContent = "Added";
+        btn.classList.add("added");
+        setTimeout(() => {
+          btn.textContent = "Add to Bag";
+          btn.classList.remove("added");
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+</html>
